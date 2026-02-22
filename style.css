@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: url('IMG_2706.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(255, 192, 203, 0.6); /* pink transparent */
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #d63384;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #b2f2bb; /* jeshile e hapur */
+    color: #333;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8ce99a;
+}
+
+/* SECTION */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #d63384;
+}
+
+/* PRODUCTS */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #ffe0f0; /* pink e hapur */
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    background-color: #d3f9d8; /* jeshile e hapur */
+}
+
+/* SOCIAL */
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ffc9de;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    background-color: #b2f2bb;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #ffd6e8;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+    .products {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .product-card {
+        width: 250px;
+    }
+}
